@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { URL } from 'src/app/app.api';
+
 
 @Component({
   selector: 'app-card',
@@ -8,9 +10,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  comics: any;
+  
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+
+    this.http.get(URL).subscribe(res => this.comics = res)
+
+    console.log(this.comics)
   }
 
 }
