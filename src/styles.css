@@ -1,11 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body{
+html, body {
+
     width: 100%;
     height: 100%;
-    margin:0;
+    margin:0;   
 }
 
-section{
+body {
+
+    background: url('assets/images/backgroundImage.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+                    
+}
+
+section {
+
     margin-top: 10px;
 }

@@ -1,9 +1,12 @@
-<section>
+
 <div class="container">
+
+<h3 class="d-flex justify-content-center text-muted">Characters</h3>
 
 <div class="row">
 
-<div class="col-md-3 col-sm-12" *ngFor="let result of results ! async">
+<div @homeAnimation class="col-md-3 col-sm-12" *ngFor="let result of results ! async">
+
   <div class="box-card">
 
       <div class="card">
@@ -22,7 +25,7 @@
             </div> 
         </div>
         </div>
-
+      
       </div> <!-- card -->
 
     </div> <!-- box-card -->
@@ -33,4 +36,3 @@
 
 </div>
 
-</section>

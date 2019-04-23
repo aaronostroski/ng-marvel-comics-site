@@ -1,15 +1,21 @@
+h3{
+    letter-spacing: 0.2em;
+}
+
 .box-card {
     text-decoration: none;
     font-family: "montserrat";
 }
 
 .card {
+    overflow: hidden;
     cursor: pointer;
     height: 380px;
     width: 250px;
-    box-shadow: 200px black;
     margin: 10px;
-    
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .8);
+    background-color: transparent;
 }
 
 .front, .back {
@@ -17,11 +23,13 @@
     height: 100%;
     overflow: hidden;
     backface-visibility: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .8);
     position: absolute;
     transition: transform .6s linear;
 }
 
 .front-image {
+    border-radius: 2px;
     height: 100%;
     width: 100%;
 }
@@ -59,11 +67,13 @@
 }
 
 .card:hover > .front {
-    transform: perspective(600px) rotateY(-180deg)
+    transform: perspective(600px) rotateY(-180deg);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .8);
 }
 
 .card:hover > .back {
-    transform: perspective(600px) rotateY(0deg)
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .8);
 }
 
 

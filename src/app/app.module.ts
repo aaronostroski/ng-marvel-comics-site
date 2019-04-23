@@ -1,11 +1,18 @@
+// Angular imports
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
+// Components imports
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { CardComponent } from './card/card.component';
+import { HeaderComponent } from './pages/home/header/header.component';
+import { CardComponent } from './pages/home/main/card/card.component';
+
+// Services imports
+import { CharacterServices } from './shared/services/characters.service';
+
 
 @NgModule({
   declarations: [
@@ -16,9 +23,10 @@ import { CardComponent } from './card/card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [CharacterServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
