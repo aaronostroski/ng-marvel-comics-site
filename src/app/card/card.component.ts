@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
+import { Character } from '../models/character/character.model'
+import { Results } from '../models/character/results.model'
+import { Items } from '../models/character/items.model'
+
 import { HttpClient } from '@angular/common/http';
 import { URL } from 'src/app/app.api';
 
@@ -8,17 +13,24 @@ import { URL } from 'src/app/app.api';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
+
 export class CardComponent implements OnInit {
 
-  comics: any;
+  results: Results[];
   
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
 
-    this.http.get(URL).subscribe(res => this.comics = res)
+    this.http.get<Character>(URL)
+    .subscribe(data => this.results = data.data.results);
 
-    console.log(this.comics)
+    
   }
 
+  getThumbnail(path, extension){
+
+    return `${path}/portrait_uncanny.${extension}`
+
+}
 }

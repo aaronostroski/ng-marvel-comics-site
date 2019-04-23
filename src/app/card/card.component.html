@@ -3,19 +3,19 @@
 
 <div class="row">
 
-<div class="col-md-4 col-sm-12 m-10">
+<div class="col-md-4 col-sm-12 m-10" *ngFor="let result of results">
   <div class="box-card">
 
       <div class="card">
 
         <div class="front">
-        <img src="" alt="Card image cap">
+        <img [src]="getThumbnail(result.thumbnail.path, result.thumbnail.extension)" alt="Card image cap">
         </div>
     
       <div class="back">
         <div class="back-content">
-        <h5></h5>
-        <span></span>
+        <h5>{{ result.name }}</h5>
+        <span>{{ result.description }}</span>
             <div class="sm">
                 <a>a</a>
                 <a>d</a>
