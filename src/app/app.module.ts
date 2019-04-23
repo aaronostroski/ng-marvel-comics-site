@@ -8,17 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Components imports
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './pages/home/header/header.component';
-import { CardComponent } from './pages/home/main/card/card.component';
+import { MainComponent } from './pages/home/main/main.component';
+import { FooterComponent } from './pages/home/footer/footer.component';
 
 // Services imports
-import { CharacterServices } from './shared/services/characters.service';
-
+import { CharactersServices } from './shared/services/characters.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CardComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,7 @@ import { CharacterServices } from './shared/services/characters.service';
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [CharacterServices],
+  providers: [CharactersServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

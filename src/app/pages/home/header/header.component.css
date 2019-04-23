@@ -1,0 +1,54 @@
+nav.bg-color {
+    background-color: #000000;
+    opacity: 0.8;
+
+}
+
+nav {
+    border: none;
+
+}
+
+a > i.fab.fa-monero {
+    font-size: 1.9em;
+
+}
+
+li > a.nav-link:hover{
+    border-bottom: solid 1px white;
+
+}
+
+div > a.dropdown-item:hover{
+    background: #000000;
+    color: white;
+
+}
+
+textarea:focus,
+button[type="button"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: none;
+  box-shadow: none;
+  outline: 0 none;
+}
+
+button[type="button"]:hover{
+    background: #000000;
+    color:white;
+    transition: 0.6s;
+}

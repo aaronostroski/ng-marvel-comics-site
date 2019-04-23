@@ -15,7 +15,7 @@ h3{
     margin: 10px;
     border: none;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .8);
-    background-color: transparent;
+    background-color: white;
 }
 
 .front, .back {
@@ -34,6 +34,15 @@ h3{
     width: 100%;
 }
 
+.back-image{
+    background: transparent;
+    position: absolute;
+    opacity: 0.2;
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+}
+
 
 .front {
     transform: perspective(600px) rotateY(0deg)
@@ -45,6 +54,7 @@ h3{
 }
 
 .back-content {
+    position: absolute;
     color: #2c3e50;
     text-align: center;
     width: 100%;

@@ -1,0 +1,39 @@
+<div class="container">
+
+  <h3 class="d-flex justify-content-center text-muted">Characters</h3>
+
+  <div class="row">
+
+    <div @mainAnimation class="col-md-3 col-sm-12" *ngFor="let result of results ! async">
+
+      <div class="box-card">
+
+        <div class="card">
+          <div class="front">
+            <img class="front-image" [src]="getThumbnail(result.thumbnail.path, result.thumbnail.extension)"
+              [alt]="result.name">
+          </div>
+
+          <div class="back">
+            <img class="back-image" [src]="getThumbnail(result.thumbnail.path, result.thumbnail.extension)"
+              [alt]="result.name">
+
+            <div class="back-content p-2">
+              <h5 class="text-danger">{{ result.name }}</h5>
+              <span class="text-muted">{{ result?.description }}</span>
+              <span class="text-muted" *ngIf="!result.description"> We don't have description for this comic yet!</span>
+              <div class="link">
+                <a href="#"><button class="btn btn-md btn-outline-danger">See more</button></a>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- card -->
+
+      </div> <!-- box-card -->
+    </div> <!-- col -->
+
+
+  </div>
+
+</div>
