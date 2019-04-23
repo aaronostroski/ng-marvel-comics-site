@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { Character } from '../models/character/character.model'
 import { Results } from '../models/character/results.model'
-import { Items } from '../models/character/items.model'
 
 import { HttpClient } from '@angular/common/http';
 import { URL } from 'src/app/app.api';
@@ -18,7 +17,7 @@ export class CardComponent implements OnInit {
 
   results: Results[];
   
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
 
@@ -28,9 +27,10 @@ export class CardComponent implements OnInit {
     
   }
 
-  getThumbnail(path, extension){
+  public getThumbnail(path, extension): string {
 
     return `${path}/portrait_uncanny.${extension}`
 
-}
+  }
+
 }
