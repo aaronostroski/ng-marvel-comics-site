@@ -1,15 +1,12 @@
 .bg-color {
     background: #000000;
-
 }
 
 h4 > a:hover {
     text-decoration: none;
-
 }
 
 i {
     font-size: 2.0em;
     margin: 10px;
-
 }

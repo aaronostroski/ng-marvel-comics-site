@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Results } from 'src/app/shared/models/character.model'
+import { Results } from 'src/app/shared/models/characters.model'
 import { CharactersServices } from 'src/app/shared/services/characters.service'
 import { mainAnimation } from 'src/app/shared/animations/main.animation'
 
@@ -15,13 +15,13 @@ import { mainAnimation } from 'src/app/shared/animations/main.animation'
 export class MainComponent implements OnInit {
 
   @Input() results: Results[];
-  
+
   constructor(private characterServices: CharactersServices) {}
 
   ngOnInit() {
 
     this.characterServices.characters().subscribe(data => this.results = data.data.results)
-    
+
   }
 
   public getThumbnail(path, extension): string {

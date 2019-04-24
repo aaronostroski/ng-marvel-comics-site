@@ -10,6 +10,6 @@ export let mainAnimation = trigger('mainAnimation', [
 export let footerAnimation = trigger('footerAnimation', [
   transition('void => *', [
     style({ display: "none" }),
-    animate(2000, style({ display : "block"})) 
+    animate(2000, style({ display: "block" }))
   ])
 ])

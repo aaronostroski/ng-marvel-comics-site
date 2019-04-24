@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CharactersServices} from 'src/app/shared/services/characters.service'
+import { CharactersServices } from 'src/app/shared/services/characters.service'
 import { footerAnimation } from 'src/app/shared/animations/main.animation'
 
 @Component({
@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
 
-    this.charactersServices.characters().subscribe( data => this.copyright = data.attributionText)
+    this.charactersServices.characters().subscribe(data => this.copyright = data.attributionText)
 
   }
 

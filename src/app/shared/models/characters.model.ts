@@ -1,4 +1,4 @@
-export interface Character {
+export interface Characters {
 
     code: number;
     status: string;

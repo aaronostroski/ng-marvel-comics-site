@@ -1,28 +1,22 @@
 nav.bg-color {
     background-color: #000000;
-    opacity: 0.8;
-
 }
 
 nav {
     border: none;
-
 }
 
 a > i.fab.fa-monero {
     font-size: 1.9em;
-
 }
 
-li > a.nav-link:hover{
+li > a.nav-link:hover {
     border-bottom: solid 1px white;
-
 }
 
-div > a.dropdown-item:hover{
+div > a.dropdown-item:hover {
     background: #000000;
     color: white;
-
 }
 
 textarea:focus,
@@ -47,7 +41,7 @@ input[type="color"]:focus,
   outline: 0 none;
 }
 
-button[type="button"]:hover{
+button[type="button"]:hover {
     background: #000000;
     color:white;
     transition: 0.6s;

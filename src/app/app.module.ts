@@ -13,6 +13,7 @@ import { FooterComponent } from './pages/home/footer/footer.component';
 
 // Services imports
 import { CharactersServices } from './shared/services/characters.service';
+import { ComicsServices } from './shared/services/comics.service'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,10 @@ import { CharactersServices } from './shared/services/characters.service';
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [CharactersServices],
+  providers: [
+    CharactersServices,
+    ComicsServices
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
