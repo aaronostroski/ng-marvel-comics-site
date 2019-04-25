@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CharactersServices } from 'src/app/shared/services/characters.service'
+import { CharactersServices } from 'src/app/shared/services/api/characters.service'
 import { footerAnimation } from 'src/app/shared/animations/main.animation'
 
 @Component({
