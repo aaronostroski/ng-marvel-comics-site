@@ -7,12 +7,17 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class CharactersServices {
 
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) {}
 
     characters(): Observable<Characters> {
 
         return this.http.get<Characters>(`${MARVEL_API.url}characters${MARVEL_API.apikey}&limit=8&orderBy=-modified`);
 
+    }
+
+    charactersRandomize(letter: string): Observable<Characters> {
+
+        return this.http.get<Characters>(`${MARVEL_API.url}characters${MARVEL_API.apikey}&nameStartsWith=${letter}&limit=8&orderBy=-modified`)
     }
 
 }

@@ -2,7 +2,8 @@ section {
     margin: 20px 0px 20px 0px; 
     padding: 10px 0px 10px 0px;
     border-radius: 10px;
-    background-image: url("src/assets/images/main-comic-background.jpg");
+    background-image: url("src/assets/images/main-creators-background.jpg");
     background-size: cover;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .8);
 }
+

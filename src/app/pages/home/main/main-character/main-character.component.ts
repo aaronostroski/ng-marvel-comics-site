@@ -16,13 +16,29 @@ import { mainAnimation } from 'src/app/shared/animations/main.animation'
 
 export class MainCharacterComponent implements OnInit {
 
-  @Input() results: Results[];
+  @Input() results: Results[]
+
+  button: boolean = true;
 
   constructor(private characterServices: CharactersServices, public mainServices: MainServices) { }
 
   ngOnInit() {
 
     this.characterServices.characters().subscribe(data => this.results = data.data.results)
+
+  }
+
+  clickRandomize() {
+
+    this.button = false;
+
+    this.characterServices.charactersRandomize(this.mainServices.randomizeLetter()).subscribe(data => {
+      
+      this.results = data.data.results
+
+      this.button = true;
+    
+    })
 
   }
 

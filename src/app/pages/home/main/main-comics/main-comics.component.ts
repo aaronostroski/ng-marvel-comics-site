@@ -27,10 +27,13 @@ export class MainComicsComponent implements OnInit {
 
   }
 
+
   getThumbnail(path: string, extension: string): string {
 
     return this.mainServices.getThumbnail(path, extension);
 
   }
+
+
 
 }
