@@ -17,6 +17,8 @@ export class MainEventsComponent implements OnInit {
 
   @Input() results: Results[]
 
+  button: boolean = true;
+
   constructor(private eventsService: EventsServices, public mainServices: MainServices) { }
 
   ngOnInit() {

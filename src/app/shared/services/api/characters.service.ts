@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MARVEL_API } from 'src/app/shared/config/api.config';
-import { Characters } from 'src/app/shared/models/characters.model';
+import { Characters, Results } from 'src/app/shared/models/characters.model';
 import { Observable } from 'rxjs';
 
 @Injectable()

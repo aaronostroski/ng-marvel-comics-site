@@ -2,7 +2,7 @@
 
   <section>
 
-    <h3 class="d-inline-flex justify-content-center align-center text-muted">Events</h3>
+    <h3 class="d-inline-flex align-center text-muted">Lastest Events</h3>
 
     <div class="row">
 
@@ -24,9 +24,7 @@
 
               <div class="back-content text-center p-2">
                 <h5 class="text-danger">{{ result.title }}</h5>
-                <span class="text-muted"> Check out for more information in the button. </span>
-                <span class="text-muted" *ngIf="!result.series.name"> We don't have description for this comic
-                  yet!</span>          
+                <span class="text-muted"> Check out for more information in the button. </span>        
                <div class="link">
                 <a [href]="result.urls[0].url"><button class="btn btn-md btn-outline-danger">See more</button></a>
                 </div>

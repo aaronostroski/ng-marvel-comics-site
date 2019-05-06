@@ -11,7 +11,7 @@ export class EventsServices {
 
     events(): Observable<Events> {
 
-        return this.http.get<Events>(`${MARVEL_API.url}events${MARVEL_API.apikey}&limit=8&orderBy=-modified`)
+        return this.http.get<Events>(`${MARVEL_API.url}events${MARVEL_API.apikey}&limit=4&orderBy=-modified`)
         
     }
 

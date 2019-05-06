@@ -9,9 +9,15 @@ export class ComicsServices {
 
     constructor(private http: HttpClient) { }
 
-    characters(): Observable<Comics> {
+    comics(): Observable<Comics> {
 
         return this.http.get<Comics>(`${MARVEL_API.url}comics${MARVEL_API.apikey}&limit=8&orderBy=-modified`);
 
     }
+
+    comicsRandomize(letter: string): Observable<Comics> {
+
+        return this.http.get<Comics>(`${MARVEL_API.url}comics${MARVEL_API.apikey}&titleStartsWith=${letter}&limit=8&orderBy=-modified`)
+    }
+
 }

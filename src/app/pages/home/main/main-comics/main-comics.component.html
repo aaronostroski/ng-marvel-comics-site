@@ -3,6 +3,7 @@
   <section>
 
     <h3 class="d-inline-flex justify-content-center align-center text-muted">Comics</h3>
+    <button type="button" (click)="clickRandomize()" [disabled]="!button" class="btn btn-lg-rd mb-2 ml-3"><span *ngIf="!button">Loading ...</span><span *ngIf="button">Randomize!</span></button>
 
     <div class="row">
 

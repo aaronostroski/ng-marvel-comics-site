@@ -28,7 +28,7 @@ export class MainCharacterComponent implements OnInit {
 
   }
 
-  clickRandomize() {
+  clickRandomize(): void {
 
     this.button = false;
 
@@ -41,6 +41,7 @@ export class MainCharacterComponent implements OnInit {
     })
 
   }
+  
 
   getThumbnail(path: string, extension: string): string {
 

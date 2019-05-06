@@ -111,5 +111,25 @@ h3 {
     box-shadow: 0 25px 60px rgba(0, 0, 0, .8);
 }
 
+button.btn.btn-lg-rd{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 150px;
+    transition: 0.6s;
+    font-family: "montserrat";
+    letter-spacing: 0.1em;
+}
+
+button.btn.btn-lg-rd:hover{
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+}
+
+
 
 /* main */

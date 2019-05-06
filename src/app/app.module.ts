@@ -19,6 +19,7 @@ import { CharactersServices } from './shared/services/api/characters.service';
 import { ComicsServices } from './shared/services/api/comics.service';
 import { EventsServices } from './shared/services/api/events.service'
 import { MainServices } from './shared/services/components/main.service';
+import { MainSeriesComponent } from './main-series/main-series.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MainServices } from './shared/services/components/main.service';
     MainCharacterComponent,
     MainComicsComponent,
     MainEventsComponent,
-    FooterComponent
+    FooterComponent,
+    MainSeriesComponent
   ],
   imports: [
     BrowserModule,
